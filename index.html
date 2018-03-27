@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Runner</title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+    <!-- lib scripts -->
+    <script src="../node_modules/mocha/mocha.js"></script> 
+    <script src="../node_modules/chai/chai.js"></script> 
+ 
+    <!-- hex-to-rgb script -->
+    <script src="../node_modules/hex-to-rgb-jquery/dist/hex-to-rgb.js"></script> 
+ 
+    <!-- Mocha setup -->
+    <script type="text/javascript">
+      chai.should();
+      mocha.setup('bdd');
+      // Start the suite.
+      window.onload = function() {
+        mocha.run();
+      };
+    </script> 
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <div id="fixture"></div>
+ 
+    <!-- source code scripts -->
+ 
+    <!-- test scripts -->
+  </body>
+</html>
